@@ -118,7 +118,10 @@ am___top_builddir__bin_Assets_OBJECTS =  \
 	__top_builddir__bin_Assets-ChatIcon.$(OBJEXT) \
 	../API/JoinPieces/__top_builddir__bin_Assets-JoinIconChat.$(OBJEXT) \
 	../API/Shapes/__top_builddir__bin_Assets-Rhombus.$(OBJEXT) \
-	../API/Shapes/__top_builddir__bin_Assets-Polygon.$(OBJEXT)
+	../API/Shapes/__top_builddir__bin_Assets-Polygon.$(OBJEXT) \
+	../API/Utilities/__top_builddir__bin_Assets-CP.$(OBJEXT) \
+	__top_builddir__bin_Assets-CopyFiles.$(OBJEXT) \
+	__top_builddir__bin_Assets-Callbacks.$(OBJEXT)
 __top_builddir__bin_Assets_OBJECTS =  \
 	$(am___top_builddir__bin_Assets_OBJECTS)
 __top_builddir__bin_Assets_LDADD = $(LDADD)
@@ -270,7 +273,27 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-__top_builddir__bin_Assets_SOURCES = Main.c Logo.c ../API/Shapes/ColoredTriangle.c ../API/JoinPieces/JoinTriangles.c ../API/Shapes/OutlinedTriangle.c ../API/include.h ../API/UI/MainWindow.ui ChatIcon.c ../API/JoinPieces/JoinIconChat.c ../API/Shapes/Rhombus.c ../API/Shapes/Polygon.c ../API/UI/about.png ../API/UI/rsz_1rsz_1chat.png ../API/UI/rsz_1rsz_octocat.png ../API/UI/GitHub-Mark-Light-64px.png ../API/UI/GitHub-Mark-64px.png ../API/UI/rsz_1rsz_image.jpg
+__top_builddir__bin_Assets_SOURCES = Main.c \
+Logo.c \
+ ../API/Shapes/ColoredTriangle.c \
+../API/JoinPieces/JoinTriangles.c \
+../API/Shapes/OutlinedTriangle.c \
+../API/include.h \
+../API/UI/MainWindow.ui \
+ChatIcon.c \
+../API/JoinPieces/JoinIconChat.c \
+../API/Shapes/Rhombus.c \
+../API/Shapes/Polygon.c \
+../API/UI/about.png \
+../API/UI/rsz_1rsz_1chat.png \
+../API/UI/rsz_1rsz_octocat.png \
+../API/UI/GitHub-Mark-Light-64px.png \
+../API/UI/GitHub-Mark-64px.png \
+../API/UI/rsz_1rsz_image.jpg \
+../API/Utilities/CP.c \
+CopyFiles.c \
+Callbacks.c
+
 __top_builddir__bin_Assets_CFLAGS = `pkg-config --cflags gtk+-3.0 cairo` -export-dynamic
 __top_builddir__bin_Assets_LDFLAGS = `pkg-config --libs gtk+-3.0 cairo` 
 all: all-am
@@ -378,6 +401,15 @@ clean-binPROGRAMS:
 ../API/Shapes/__top_builddir__bin_Assets-Polygon.$(OBJEXT):  \
 	../API/Shapes/$(am__dirstamp) \
 	../API/Shapes/$(DEPDIR)/$(am__dirstamp)
+../API/Utilities/$(am__dirstamp):
+	@$(MKDIR_P) ../API/Utilities
+	@: > ../API/Utilities/$(am__dirstamp)
+../API/Utilities/$(DEPDIR)/$(am__dirstamp):
+	@$(MKDIR_P) ../API/Utilities/$(DEPDIR)
+	@: > ../API/Utilities/$(DEPDIR)/$(am__dirstamp)
+../API/Utilities/__top_builddir__bin_Assets-CP.$(OBJEXT):  \
+	../API/Utilities/$(am__dirstamp) \
+	../API/Utilities/$(DEPDIR)/$(am__dirstamp)
 $(top_builddir)/bin/$(am__dirstamp):
 	@$(MKDIR_P) $(top_builddir)/bin
 	@: > $(top_builddir)/bin/$(am__dirstamp)
@@ -390,6 +422,7 @@ mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
 	-rm -f ../API/JoinPieces/*.$(OBJEXT)
 	-rm -f ../API/Shapes/*.$(OBJEXT)
+	-rm -f ../API/Utilities/*.$(OBJEXT)
 
 distclean-compile:
 	-rm -f *.tab.c
@@ -400,7 +433,10 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@../API/Shapes/$(DEPDIR)/__top_builddir__bin_Assets-OutlinedTriangle.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@../API/Shapes/$(DEPDIR)/__top_builddir__bin_Assets-Polygon.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@../API/Shapes/$(DEPDIR)/__top_builddir__bin_Assets-Rhombus.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@../API/Utilities/$(DEPDIR)/__top_builddir__bin_Assets-CP.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-Callbacks.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-ChatIcon.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-CopyFiles.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-Logo.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-Main.Po@am__quote@
 
@@ -546,6 +582,48 @@ __top_builddir__bin_Assets-ChatIcon.obj: ChatIcon.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o ../API/Shapes/__top_builddir__bin_Assets-Polygon.obj `if test -f '../API/Shapes/Polygon.c'; then $(CYGPATH_W) '../API/Shapes/Polygon.c'; else $(CYGPATH_W) '$(srcdir)/../API/Shapes/Polygon.c'; fi`
 
+../API/Utilities/__top_builddir__bin_Assets-CP.o: ../API/Utilities/CP.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT ../API/Utilities/__top_builddir__bin_Assets-CP.o -MD -MP -MF ../API/Utilities/$(DEPDIR)/__top_builddir__bin_Assets-CP.Tpo -c -o ../API/Utilities/__top_builddir__bin_Assets-CP.o `test -f '../API/Utilities/CP.c' || echo '$(srcdir)/'`../API/Utilities/CP.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) ../API/Utilities/$(DEPDIR)/__top_builddir__bin_Assets-CP.Tpo ../API/Utilities/$(DEPDIR)/__top_builddir__bin_Assets-CP.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='../API/Utilities/CP.c' object='../API/Utilities/__top_builddir__bin_Assets-CP.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o ../API/Utilities/__top_builddir__bin_Assets-CP.o `test -f '../API/Utilities/CP.c' || echo '$(srcdir)/'`../API/Utilities/CP.c
+
+../API/Utilities/__top_builddir__bin_Assets-CP.obj: ../API/Utilities/CP.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT ../API/Utilities/__top_builddir__bin_Assets-CP.obj -MD -MP -MF ../API/Utilities/$(DEPDIR)/__top_builddir__bin_Assets-CP.Tpo -c -o ../API/Utilities/__top_builddir__bin_Assets-CP.obj `if test -f '../API/Utilities/CP.c'; then $(CYGPATH_W) '../API/Utilities/CP.c'; else $(CYGPATH_W) '$(srcdir)/../API/Utilities/CP.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) ../API/Utilities/$(DEPDIR)/__top_builddir__bin_Assets-CP.Tpo ../API/Utilities/$(DEPDIR)/__top_builddir__bin_Assets-CP.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='../API/Utilities/CP.c' object='../API/Utilities/__top_builddir__bin_Assets-CP.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o ../API/Utilities/__top_builddir__bin_Assets-CP.obj `if test -f '../API/Utilities/CP.c'; then $(CYGPATH_W) '../API/Utilities/CP.c'; else $(CYGPATH_W) '$(srcdir)/../API/Utilities/CP.c'; fi`
+
+__top_builddir__bin_Assets-CopyFiles.o: CopyFiles.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT __top_builddir__bin_Assets-CopyFiles.o -MD -MP -MF $(DEPDIR)/__top_builddir__bin_Assets-CopyFiles.Tpo -c -o __top_builddir__bin_Assets-CopyFiles.o `test -f 'CopyFiles.c' || echo '$(srcdir)/'`CopyFiles.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/__top_builddir__bin_Assets-CopyFiles.Tpo $(DEPDIR)/__top_builddir__bin_Assets-CopyFiles.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='CopyFiles.c' object='__top_builddir__bin_Assets-CopyFiles.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o __top_builddir__bin_Assets-CopyFiles.o `test -f 'CopyFiles.c' || echo '$(srcdir)/'`CopyFiles.c
+
+__top_builddir__bin_Assets-CopyFiles.obj: CopyFiles.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT __top_builddir__bin_Assets-CopyFiles.obj -MD -MP -MF $(DEPDIR)/__top_builddir__bin_Assets-CopyFiles.Tpo -c -o __top_builddir__bin_Assets-CopyFiles.obj `if test -f 'CopyFiles.c'; then $(CYGPATH_W) 'CopyFiles.c'; else $(CYGPATH_W) '$(srcdir)/CopyFiles.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/__top_builddir__bin_Assets-CopyFiles.Tpo $(DEPDIR)/__top_builddir__bin_Assets-CopyFiles.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='CopyFiles.c' object='__top_builddir__bin_Assets-CopyFiles.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o __top_builddir__bin_Assets-CopyFiles.obj `if test -f 'CopyFiles.c'; then $(CYGPATH_W) 'CopyFiles.c'; else $(CYGPATH_W) '$(srcdir)/CopyFiles.c'; fi`
+
+__top_builddir__bin_Assets-Callbacks.o: Callbacks.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT __top_builddir__bin_Assets-Callbacks.o -MD -MP -MF $(DEPDIR)/__top_builddir__bin_Assets-Callbacks.Tpo -c -o __top_builddir__bin_Assets-Callbacks.o `test -f 'Callbacks.c' || echo '$(srcdir)/'`Callbacks.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/__top_builddir__bin_Assets-Callbacks.Tpo $(DEPDIR)/__top_builddir__bin_Assets-Callbacks.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='Callbacks.c' object='__top_builddir__bin_Assets-Callbacks.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o __top_builddir__bin_Assets-Callbacks.o `test -f 'Callbacks.c' || echo '$(srcdir)/'`Callbacks.c
+
+__top_builddir__bin_Assets-Callbacks.obj: Callbacks.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT __top_builddir__bin_Assets-Callbacks.obj -MD -MP -MF $(DEPDIR)/__top_builddir__bin_Assets-Callbacks.Tpo -c -o __top_builddir__bin_Assets-Callbacks.obj `if test -f 'Callbacks.c'; then $(CYGPATH_W) 'Callbacks.c'; else $(CYGPATH_W) '$(srcdir)/Callbacks.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/__top_builddir__bin_Assets-Callbacks.Tpo $(DEPDIR)/__top_builddir__bin_Assets-Callbacks.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='Callbacks.c' object='__top_builddir__bin_Assets-Callbacks.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o __top_builddir__bin_Assets-Callbacks.obj `if test -f 'Callbacks.c'; then $(CYGPATH_W) 'Callbacks.c'; else $(CYGPATH_W) '$(srcdir)/Callbacks.c'; fi`
+
 ID: $(am__tagged_files)
 	$(am__define_uniq_tagged_files); mkid -fID $$unique
 tags: tags-am
@@ -665,6 +743,8 @@ distclean-generic:
 	-rm -f ../API/JoinPieces/$(am__dirstamp)
 	-rm -f ../API/Shapes/$(DEPDIR)/$(am__dirstamp)
 	-rm -f ../API/Shapes/$(am__dirstamp)
+	-rm -f ../API/Utilities/$(DEPDIR)/$(am__dirstamp)
+	-rm -f ../API/Utilities/$(am__dirstamp)
 	-test -z "$(top_builddir)/bin/$(am__dirstamp)" || rm -f $(top_builddir)/bin/$(am__dirstamp)
 
 maintainer-clean-generic:
@@ -675,7 +755,7 @@ clean: clean-am
 clean-am: clean-binPROGRAMS clean-generic mostlyclean-am
 
 distclean: distclean-am
-	-rm -rf ../API/JoinPieces/$(DEPDIR) ../API/Shapes/$(DEPDIR) ./$(DEPDIR)
+	-rm -rf ../API/JoinPieces/$(DEPDIR) ../API/Shapes/$(DEPDIR) ../API/Utilities/$(DEPDIR) ./$(DEPDIR)
 	-rm -f Makefile
 distclean-am: clean-am distclean-compile distclean-generic \
 	distclean-tags
@@ -721,7 +801,7 @@ install-ps-am:
 installcheck-am:
 
 maintainer-clean: maintainer-clean-am
-	-rm -rf ../API/JoinPieces/$(DEPDIR) ../API/Shapes/$(DEPDIR) ./$(DEPDIR)
+	-rm -rf ../API/JoinPieces/$(DEPDIR) ../API/Shapes/$(DEPDIR) ../API/Utilities/$(DEPDIR) ./$(DEPDIR)
 	-rm -f Makefile
 maintainer-clean-am: distclean-am maintainer-clean-generic
 
