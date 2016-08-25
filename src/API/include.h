@@ -13,8 +13,6 @@
 #define INCLUDE_H_INCLUDED
 #include <cairo.h>
 
-void AllGladeGtkCallbacks();
-
 void CopyFiles();
 
 int cp(const char *to, const char *from);
