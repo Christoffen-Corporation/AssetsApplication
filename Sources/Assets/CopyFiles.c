@@ -31,13 +31,13 @@ void CopyFiles() {
  strcpy( to6, "UI/rsz_1rsz_image.jpg" );
  strcpy( to7, "UI/rsz_1rsz_octocat.png" );
 
- strcpy( from1, "../src/API/UI/about.png" );
- strcpy( from2, "../src/API/UI/GitHub-Mark-64px.png" );
- strcpy( from3, "../src/API/UI/GitHub-Mark-Light-64px" );
- strcpy( from4, "../src/API/UI/MainWindow.ui" );
- strcpy( from5, "../src/API/UI/rsz_1rsz_1chat.png" );
- strcpy( from6, "../src/API/UI/rsz_1rsz_image.jpg" );
- strcpy( from7, "../src/API/UI/rsz_1rsz_octocat.png" );
+ strcpy( from1, "../Sources/API/UI/about.png" );
+ strcpy( from2, "../Sources/API/UI/GitHub-Mark-64px.png" );
+ strcpy( from3, "../Sources/API/UI/GitHub-Mark-Light-64px" );
+ strcpy( from4, "../Sources/API/UI/MainWindow.ui" );
+ strcpy( from5, "../Sources/API/UI/rsz_1rsz_1chat.png" );
+ strcpy( from6, "../Sources/API/UI/rsz_1rsz_image.jpg" );
+ strcpy( from7, "../Sources/API/UI/rsz_1rsz_octocat.png" );
 
 cp(to1, from1);
 cp(to2, from2);

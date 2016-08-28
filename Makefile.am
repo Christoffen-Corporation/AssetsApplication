@@ -1,4 +1,4 @@
 AUTOMAKE_OPTIONS = foreign
-SUBDIRS = src/Assets
-INCLUDE = src/API/include.h src/API/UI/MainWindow.ui src/API/Images/About.png ../API/UI/rsz_1rsz_1chat.png ../API/UI/rsz_1rsz_octocat.png
+SUBDIRS = Sources/Assets
+INCLUDE = Sources/API/include.h Sources/API/UI/MainWindow.ui Sources/API/Images/About.png ../API/UI/rsz_1rsz_1chat.png ../API/UI/rsz_1rsz_octocat.png
 
