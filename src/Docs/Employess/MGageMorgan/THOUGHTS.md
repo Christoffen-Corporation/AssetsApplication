@@ -2,7 +2,9 @@
 
 Hello, this is a little bit of a place for documenting my rambling that I feel only people who want to check into this project need to see. I'm a C programmer, and my name is M. Gage Morgan, if you didn't pick that up already. I know people don't generally like the bias that comes with first-person POV, but chill, because I am the original developer of this application. I'm having some cooldown time, and I thought I'd document some of the things I thought might be cool for me to implement. 
 
-As for 
+## Personal Maintainer Logs
+
+These are pseudo-blog posts, and will be archived as needed as long as this project is continued. Also note that a template will be included. This will be the one I copy and mod. Note that because this is my section personal ramblings as a project maintainer, they will be petrolled by me to make sure no trolling or changing to inaccurate content takes place. 
 
 ## TODO List (personal)
 I'm not telling anybody, not even Elijah, that this page exists. Not to be a dick, but because if he mentions something he read here and I didn't post to FB or Twitter over this, I know where he's been lmfao. I doubt he'll be here, if not until he has a reason to be here in the first place. 
