@@ -1,9 +1,9 @@
 #include <cairo.h>
 #include "../include.h"
 
-void OutlinedTriangle(int img_width, int img_height, double scaleX1, double scaleY1, double lineX1, double lineY1, double lineX2, double lineY2, double lineX3, double lineY3, double finishX1, double finishY1, char img_name[50]) {
+void OutlinedTriangle(int const LOGO_WIDTH, int const LOGO_HEIGHT, double scaleX1, double scaleY1, double lineX1, double lineY1, double lineX2, double lineY2, double lineX3, double lineY3, double finishX1, double finishY1, char img_name[50]) {
         cairo_surface_t *surface = 
-            cairo_image_surface_create (CAIRO_FORMAT_ARGB32, 421, 410); 
+            cairo_image_surface_create (CAIRO_FORMAT_ARGB32, LOGO_WIDTH, LOGO_HEIGHT); 
         cairo_t *cr = 
             cairo_create (surface); 
 
