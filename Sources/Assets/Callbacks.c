@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
+#include "../API/Logos.h"
 #include "../API/include.h"
 
 void onChatAllPiecesClicked() {

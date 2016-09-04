@@ -4,7 +4,7 @@
 #include <errno.h>
 #include "../API/include.h"
 
-void CopyFiles() {
+copy CopyFiles() {
 /**
  * Declarations of Independences
  */

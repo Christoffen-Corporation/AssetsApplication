@@ -8,9 +8,9 @@
  * in options.c
  */
 #include <cairo.h>
-#include "../include.h"
+#include "../Logos.h"
 
-void ColoredTriangle(int const LOGO_WIDTH, 
+triangle ColoredTriangle(int const LOGO_WIDTH, 
                      int const LOGO_HEIGHT, 
                      double r, 
                      double g, 

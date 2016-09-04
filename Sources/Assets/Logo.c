@@ -9,11 +9,11 @@
  * for the most part are described in this file.
  */
 #include <cairo.h>
-#include "../API/include.h"
+#include "../API/Logos.h"
 #define LOGO_WIDTH 421 
 #define LOGO_HEIGHT 410
 
-void AllImages() {
+logo AllImages() {
 	OutlinedTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
                          10, 10, 
                          2.3, 28.1, 
@@ -143,7 +143,7 @@ void AllImages() {
  * "logo-generator -O" in the CLI. The output is just 
  * the seven individual triangles without the logo.
  */
-void OutlinedNoLogo() {
+logo OutlinedNoLogo() {
 	OutlinedTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
                          10, 10, 
                          2.3, 28.1, 
@@ -204,7 +204,7 @@ void OutlinedNoLogo() {
 /*
  * The same as above WITH the actual logo
  */
-void OutlinedAll() {
+logo OutlinedAll() {
 	OutlinedTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
                          10, 10, 
                          2.3, 28.1, 
@@ -275,7 +275,7 @@ void OutlinedAll() {
  * The same as outlined_nologo(), but with 
  * a bit more color.
  */
-void ColoredNoLogo() {
+logo ColoredNoLogo() {
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
                         0, 0.79, 0.83, 0.8,
                         143, 30,
@@ -330,7 +330,7 @@ void ColoredNoLogo() {
  * The same as outlined_all(), just with 
  * more color.
  */
-void ColoredAll() {
+logo ColoredAll() {
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
                         0, 0.79, 0.83, 0.8,
                         143, 30,
@@ -396,7 +396,7 @@ void ColoredAll() {
  * more information about why this even exists 
  * in the first place.
  */
-void Frankenlogos() {
+logo Frankenlogos() {
 	OutlinedTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
                          10, 10, 
                          2.3, 28.1, 

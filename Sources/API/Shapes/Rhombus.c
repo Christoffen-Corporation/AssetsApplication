@@ -1,7 +1,7 @@
 #include <cairo.h>
 #include "../include.h"
 
-void rhombus(int img_width, int img_height, double r, double g, double b, double a, double verticeX1, double verticeY1, double verticeX2, double verticeY2, double verticeX3, double verticeY3, double verticeX4, double verticeY4, char img_name[50]) {
+shape rhombus(int img_width, int img_height, double r, double g, double b, double a, double verticeX1, double verticeY1, double verticeX2, double verticeY2, double verticeX3, double verticeY3, double verticeX4, double verticeY4, char img_name[50]) {
 
 cairo_surface_t *surface =
 	cairo_image_surface_create(CAIRO_FORMAT_ARGB32, img_width, img_height);

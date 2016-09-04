@@ -279,6 +279,7 @@ Logo.c \
 ../API/JoinPieces/JoinTriangles.c \
 ../API/Shapes/OutlinedTriangle.c \
 ../API/include.h \
+../API/Logos.h \
 ../API/UI/MainWindow.ui \
 ChatIcon.c \
 ../API/JoinPieces/JoinIconChat.c \
