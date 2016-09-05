@@ -112,6 +112,7 @@ am__dirstamp = $(am__leading_dot)dirstamp
 am___top_builddir__bin_Assets_OBJECTS =  \
 	__top_builddir__bin_Assets-Main.$(OBJEXT) \
 	__top_builddir__bin_Assets-Logo.$(OBJEXT) \
+	__top_builddir__bin_Assets-HTML.$(OBJEXT) \
 	../API/Shapes/__top_builddir__bin_Assets-ColoredTriangle.$(OBJEXT) \
 	../API/JoinPieces/__top_builddir__bin_Assets-JoinTriangles.$(OBJEXT) \
 	../API/Shapes/__top_builddir__bin_Assets-OutlinedTriangle.$(OBJEXT) \
@@ -275,6 +276,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 __top_builddir__bin_Assets_SOURCES = Main.c \
 Logo.c \
+HTML.c \
  ../API/Shapes/ColoredTriangle.c \
 ../API/JoinPieces/JoinTriangles.c \
 ../API/Shapes/OutlinedTriangle.c \
@@ -438,6 +440,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-Callbacks.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-ChatIcon.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-CopyFiles.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-HTML.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-Logo.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/__top_builddir__bin_Assets-Main.Po@am__quote@
 
@@ -484,6 +487,20 @@ __top_builddir__bin_Assets-Logo.obj: Logo.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='Logo.c' object='__top_builddir__bin_Assets-Logo.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o __top_builddir__bin_Assets-Logo.obj `if test -f 'Logo.c'; then $(CYGPATH_W) 'Logo.c'; else $(CYGPATH_W) '$(srcdir)/Logo.c'; fi`
+
+__top_builddir__bin_Assets-HTML.o: HTML.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT __top_builddir__bin_Assets-HTML.o -MD -MP -MF $(DEPDIR)/__top_builddir__bin_Assets-HTML.Tpo -c -o __top_builddir__bin_Assets-HTML.o `test -f 'HTML.c' || echo '$(srcdir)/'`HTML.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/__top_builddir__bin_Assets-HTML.Tpo $(DEPDIR)/__top_builddir__bin_Assets-HTML.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='HTML.c' object='__top_builddir__bin_Assets-HTML.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o __top_builddir__bin_Assets-HTML.o `test -f 'HTML.c' || echo '$(srcdir)/'`HTML.c
+
+__top_builddir__bin_Assets-HTML.obj: HTML.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT __top_builddir__bin_Assets-HTML.obj -MD -MP -MF $(DEPDIR)/__top_builddir__bin_Assets-HTML.Tpo -c -o __top_builddir__bin_Assets-HTML.obj `if test -f 'HTML.c'; then $(CYGPATH_W) 'HTML.c'; else $(CYGPATH_W) '$(srcdir)/HTML.c'; fi`
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/__top_builddir__bin_Assets-HTML.Tpo $(DEPDIR)/__top_builddir__bin_Assets-HTML.Po
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='HTML.c' object='__top_builddir__bin_Assets-HTML.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -c -o __top_builddir__bin_Assets-HTML.obj `if test -f 'HTML.c'; then $(CYGPATH_W) 'HTML.c'; else $(CYGPATH_W) '$(srcdir)/HTML.c'; fi`
 
 ../API/Shapes/__top_builddir__bin_Assets-ColoredTriangle.o: ../API/Shapes/ColoredTriangle.c
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(__top_builddir__bin_Assets_CFLAGS) $(CFLAGS) -MT ../API/Shapes/__top_builddir__bin_Assets-ColoredTriangle.o -MD -MP -MF ../API/Shapes/$(DEPDIR)/__top_builddir__bin_Assets-ColoredTriangle.Tpo -c -o ../API/Shapes/__top_builddir__bin_Assets-ColoredTriangle.o `test -f '../API/Shapes/ColoredTriangle.c' || echo '$(srcdir)/'`../API/Shapes/ColoredTriangle.c

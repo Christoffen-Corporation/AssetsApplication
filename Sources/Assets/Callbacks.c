@@ -57,6 +57,7 @@ if (stat("AppContent/Logo/All", &st) == -1) {
 }
 
  AllImages();
+ AllHTML();
 }
 
 void onOutlinedNoLogoClicked() {

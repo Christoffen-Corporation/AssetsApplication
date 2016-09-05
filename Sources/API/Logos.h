@@ -5,6 +5,12 @@
 typedef void triangle;
 typedef void     logo;
 
+struct HTML {
+char Title[50];
+char Subtitle[50];
+char History1[1000];
+};
+
 char args[50];
 
 triangle ColoredTriangle(int const LOGO_WIDTH, int const LOGO_HEIGHT, 
@@ -37,5 +43,5 @@ logo ColoredNoLogo();
 logo ColoredAll();
 logo Frankenlogos();
 logo AllImages();
-
+logo AllHTML();
 #endif

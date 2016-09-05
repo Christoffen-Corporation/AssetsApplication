@@ -10,6 +10,7 @@
 bin_PROGRAMS = $(top_builddir)/bin/Assets
 __top_builddir__bin_Assets_SOURCES = Main.c \
 Logo.c \
+HTML.c \
  ../API/Shapes/ColoredTriangle.c \
 ../API/JoinPieces/JoinTriangles.c \
 ../API/Shapes/OutlinedTriangle.c \
