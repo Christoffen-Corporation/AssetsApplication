@@ -14,7 +14,7 @@ char History1[1000];
 char args[50];
 
 triangle ColoredTriangle(int const LOGO_WIDTH, int const LOGO_HEIGHT, 
-                     double r, double g, double b, double a, 
+                     double r, double g, double b, double a, double r2, double g2, double b2, double a2,
                      double verticeX1, double verticeY1, 
                      double verticeX2, double verticeY2, 
                      double verticeX3, double verticeY3, 

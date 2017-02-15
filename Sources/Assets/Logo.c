@@ -80,49 +80,49 @@ logo AllImages() {
                       "AppContent/Logo/All/crstfn-outline.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
-                        0, 0.79, 0.83, 0.8, 
+                        0.7, 0.20, 0.17, 0.8, 0.98, 0.38, 0.09, 0.8,
                         143, 30, 
                         198, 176, 
                         23, 281,
                         "AppContent/Logo/All/triangle1-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
-                        0.60, 0.85, 0.91, 0.8, 
+                        0, 0.63, 0.90, 0.8, 0, 0.99, 0.93, 0.8,
                         275, 44,
                         377, 102,
                         100, 118, 
                         "AppContent/Logo/All/triangle2-color.png");
  
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.28, 0.42, 0.61, 0.8,
+                        0.78, 0.38, 0.09, 0.8, 0.98, 0.20, 0.17, 0.8,
                         363, 190,
                         250, 126, 
                         305, 26,
                         "AppContent/Logo/All/triangle3-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
-                        0, 0.63, 0.90, 0.8, 
+                        0, 0.79, 0.83, 0.8, 0, 0.63, 1, 0.8,
                         376, 130, 
                         304, 222,
                         290, 147,
                        "AppContent/Logo/All/triangle4-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
-                        0.60, 0.85, 0.91, 0.8,
+                        0, 0.63, 0.90, 0.8, 0, 0.99, 0.93, 0.8,
                         244, 314,
                         148, 375,
                         70, 184,
                         "AppContent/Logo/All/triangle5-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.28, 0.42, 0.61, 0.8, 
+                        0.78, 0.38, 0.09, 0.8, 0.98, 0.20, 0.17, 0.8,
                         195, 260, 
                         333, 356, 
                         128, 330,
                         "AppContent/Logo/All/triangle6-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
-                        0, 0.63, 0.90, 0.8,
+                        0, 0.79, 0.83, 0.8, 0, 0.63, 1, 0.8,
                         304, 270,
                         311, 380,
                         252, 326,
@@ -277,49 +277,49 @@ logo OutlinedAll() {
  */
 logo ColoredNoLogo() {
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0, 0.79, 0.83, 0.8,
+                        0.7, 0.20, 0.17, 0.8, 0.98, 0.38, 0.09, 0.8,
                         143, 30,
                         198, 176,
                         23, 281, 
                         "AppContent/Logo/ColoredNoLogo/triangle1-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.60, 0.85, 0.91, 0.8,
+                        0, 0.63, 0.90, 0.8, 0, 0.99, 0.93, 0.8,
                         275, 44,
                         377, 102,
                         100, 118,
                         "AppContent/Logo/ColoredNoLogo/triangle2-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.28, 0.42, 0.61, 0.8,
+                        0.78, 0.38, 0.09, 0.8, 0.98, 0.20, 0.17, 0.8,
                         363, 190,
                         250, 126,
                         305, 26,
                         "AppContent/Logo/ColoredNoLogo/triangle3-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0, 0.63, 0.90, 0.8,
+                        0, 0.79, 0.83, 0.8, 0, 0.63, 1, 0.8,
                         376, 130,
                         304, 222,
                         290, 147,
                         "AppContent/Logo/ColoredNoLogo/triangle4-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.60, 0.85, 0.91, 0.8,
+                        0, 0.63, 0.90, 0.8, 0, 0.99, 0.93, 0.8,
                         244, 314,
                         148, 375,
                         70, 184,
                         "AppContent/Logo/ColoredNoLogo/triangle5-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.28, 0.42, 0.61, 0.8,
+                        0.78, 0.38, 0.09, 0.8, 0.98, 0.20, 0.17, 0.8,
                         195, 260,
                         333, 356, 
                         128, 330, 
                         "AppContent/Logo/ColoredNoLogo/triangle6-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0, 0.63, 0.90, 0.8,
+                        0, 0.79, 0.83, 0.8, 0, 0.63, 1, 0.8,
                         304, 270, 
                         311, 380,
                         252, 326,
@@ -332,49 +332,49 @@ logo ColoredNoLogo() {
  */
 logo ColoredAll() {
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
-                        0, 0.79, 0.83, 0.8,
+                        0.7, 0.20, 0.17, 0.8, 0.98, 0.38, 0.09, 0.8,
                         143, 30,
                         198, 176,
                         23, 281,
                         "AppContent/Logo/AllColors/triangle1-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.60, 0.85, 0.91, 0.8, 
+                        0, 0.63, 0.90, 0.8, 0, 0.99, 0.93, 0.8,
                         275, 44,
                         377, 102, 
                         100, 118, 
                         "AppContent/Logo/AllColors/triangle2-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.28, 0.42, 0.61, 0.8,
+                        0.78, 0.38, 0.09, 0.8, 0.98, 0.20, 0.17, 0.8,
                         363, 190,
                         250, 126,
                         305, 26, 
                         "AppContent/Logo/AllColors/triangle3-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0, 0.63, 0.90, 0.8, 
+                        0, 0.79, 0.83, 0.8, 0, 0.63, 1, 0.8,
                         376, 130,
                         304, 222,
                         290, 147,
                         "AppContent/Logo/AllColors/triangle4-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.60, 0.85, 0.91, 0.8,
+                        0, 0.63, 0.90, 0.8, 0, 0.99, 0.93, 0.8,
                         244, 314, 
                         148, 375,
                         70, 184,
                         "AppContent/Logo/AllColors/triangle5-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.28, 0.42, 0.61, 0.8,
+                        0.78, 0.38, 0.09, 0.8, 0.98, 0.20, 0.17, 0.8,
                         195, 260,
                         333, 356,
                         128, 330,
                         "AppContent/Logo/AllColors/triangle6-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0, 0.63, 0.90, 0.8,
+                        0, 0.79, 0.83, 0.8, 0, 0.63, 1, 0.8,
                         304, 270,
                         311, 380,
                         252, 326,
@@ -454,49 +454,49 @@ logo Frankenlogos() {
                          "AppContent/Logo/Frankenlogos/triangle7-outline.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0, 0.79, 0.83, 0.8,
+                        0.7, 0.20, 0.17, 0.8, 0.98, 0.38, 0.09, 0.8,
                         143, 30,
                         198, 176,
                         23, 281,
                         "AppContent/Logo/Frankenlogos/triangle1-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.60, 0.85, 0.91, 0.8,
+                        0, 0.63, 0.90, 0.8, 0, 0.99, 0.93, 0.8,
                         275, 44,
                         377, 102, 
                         100, 118,
                         "AppContent/Logo/Frankenlogos/triangle2-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0.28, 0.42, 0.61, 0.8,
+                        0.78, 0.38, 0.09, 0.8, 0.98, 0.20, 0.17, 0.8,
                         363, 190,
                         250, 126,
                         305, 26,
                         "AppContent/Logo/Frankenlogos/triangle3-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0, 0.63, 0.90, 0.8,
+                        0, 0.79, 0.83, 0.8, 0, 0.63, 1, 0.8,
                         376, 130,
                         304, 222,
                         290, 147,
                         "AppContent/Logo/Frankenlogos/triangle4-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
-                        0.60, 0.85, 0.91, 0.8,
+                        0, 0.63, 0.90, 0.8, 0, 0.99, 0.93, 0.8,
                         244, 314, 
                         148, 375,
                         70, 184,
                         "AppContent/Logo/Frankenlogos/triangle5-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT, 
-                        0.28, 0.42, 0.61, 0.8,
+                        0.78, 0.38, 0.09, 0.8, 0.98, 0.20, 0.17, 0.8,
                         195, 260,
                         333, 356,
                         128, 330,
                         "AppContent/Logo/Frankenlogos/triangle6-color.png");
 
 	ColoredTriangle(LOGO_WIDTH, LOGO_HEIGHT,
-                        0, 0.63, 0.90, 0.8, 
+                        0, 0.79, 0.83, 0.8, 0, 0.63, 1, 0.8,
                         304, 270,
                         311, 380,
                         252, 326,

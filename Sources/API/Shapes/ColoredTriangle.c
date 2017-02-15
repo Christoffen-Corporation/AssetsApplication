@@ -16,6 +16,10 @@ triangle ColoredTriangle(int const LOGO_WIDTH,
                      double g, 
                      double b, 
                      double a, 
+                     double r2, 
+                     double g2, 
+                     double b2, 
+                     double a2, 
                      double verticeX1, 
                      double verticeY1, 
                      double verticeX2, 
@@ -33,7 +37,7 @@ cairo_line_to(cr, verticeX2, verticeY2);
 cairo_line_to(cr, verticeX3, verticeY3);
 cairo_close_path(cr);
 cairo_fill_preserve(cr);
-cairo_set_source_rgba(cr, r, g, b, a);
+cairo_set_source_rgba(cr, r2, g2, b2, a2);
 cairo_stroke(cr);
 cairo_surface_write_to_png(surface, img_name);
 cairo_destroy(cr);

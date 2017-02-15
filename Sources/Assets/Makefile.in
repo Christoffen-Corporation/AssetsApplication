@@ -312,9 +312,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu Sources/Assets/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign Sources/Assets/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu Sources/Assets/Makefile
+	  $(AUTOMAKE) --foreign Sources/Assets/Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
 	  *config.status*) \
