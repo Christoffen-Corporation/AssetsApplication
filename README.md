@@ -1,3 +1,3 @@
 # Assets Application
 
-This file needs to be created as a result of autoconf, we'll need to use an IN file for that.
+Once the GNU-GCC build gets this automated, we'll see about this one syncing up. Sorry for doc delays

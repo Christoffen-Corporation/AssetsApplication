@@ -1,0 +1,17 @@
+../API/JoinPieces/__top_builddir__bin_Assets-JoinTriangles.o: \
+ ../API/JoinPieces/JoinTriangles.c /usr/include/stdc-predef.h \
+ /usr/include/cairo/cairo.h /usr/include/cairo/cairo-version.h \
+ /usr/include/cairo/cairo-features.h \
+ /usr/include/cairo/cairo-deprecated.h ../API/JoinPieces/../include.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/cairo/cairo.h:
+
+/usr/include/cairo/cairo-version.h:
+
+/usr/include/cairo/cairo-features.h:
+
+/usr/include/cairo/cairo-deprecated.h:
+
+../API/JoinPieces/../include.h:

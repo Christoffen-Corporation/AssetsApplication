@@ -1,0 +1,17 @@
+../API/Shapes/__top_builddir__bin_Assets-Polygon.o: \
+ ../API/Shapes/Polygon.c /usr/include/stdc-predef.h \
+ /usr/include/cairo/cairo.h /usr/include/cairo/cairo-version.h \
+ /usr/include/cairo/cairo-features.h \
+ /usr/include/cairo/cairo-deprecated.h ../API/Shapes/../include.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/cairo/cairo.h:
+
+/usr/include/cairo/cairo-version.h:
+
+/usr/include/cairo/cairo-features.h:
+
+/usr/include/cairo/cairo-deprecated.h:
+
+../API/Shapes/../include.h:

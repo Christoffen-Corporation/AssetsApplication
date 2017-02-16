@@ -1,0 +1,20 @@
+../API/Shapes/__top_builddir__bin_Assets-ColoredTriangle.o: \
+ ../API/Shapes/ColoredTriangle.c /usr/include/stdc-predef.h \
+ /usr/include/cairo/cairo.h /usr/include/cairo/cairo-version.h \
+ /usr/include/cairo/cairo-features.h \
+ /usr/include/cairo/cairo-deprecated.h ../API/Shapes/../Logos.h \
+ ../API/Shapes/../include.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/cairo/cairo.h:
+
+/usr/include/cairo/cairo-version.h:
+
+/usr/include/cairo/cairo-features.h:
+
+/usr/include/cairo/cairo-deprecated.h:
+
+../API/Shapes/../Logos.h:
+
+../API/Shapes/../include.h:
