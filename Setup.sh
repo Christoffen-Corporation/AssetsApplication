@@ -19,14 +19,7 @@ echo "3. GNU Autotools and GCC";
 read OPTION;
 
 clang_check () {
-	if [ ! -d "AssetsApplication-CMake-Clang" ]; 
-	then
-		echo "CMake-Clang not found, cloning them as deps from GitHub"
-		git clone https\:\/\/\github.com\/\ChristoffenOSWorks\/\AssetsApplication-CMake-Clang.git
-	else
-		echo "Moving on"
-	fi
-	cp $BASEDIR\/\AssetsApplication-CMake-Clang\/\CMakeLists.txt $BASEDIR
+	cp $BASEDIR\/\AA-CMake-Clang\/\CMakeLists.txt $BASEDIR
 	export CC=clang
 	export CXX=clang++
 	cmake -H. -Bbuild
@@ -35,6 +28,8 @@ clang_check () {
 
 if [ $OPTION -eq 1 ] 
 then
+	git submodule init
+	git submodule update
 	clang_check
 elif [ $OPTION -eq 2 ]
 then
@@ -45,14 +40,7 @@ then
 
 elif [ $OPTION -eq 3 ] 
 then
-	if [ ! -d "$GNU_GCC" ]; 
-	then
-		echo "GNU-GCC not found, cloning them as deps from GitHub"
-		git clone https\:\/\/\github.com\/\ChristoffenOSWorks\/\$GNU_GCC.git
-	else
-		echo "Moving on"
-	fi
-	git clone https\:\/\/\github.com\/\ChristoffenOSWorks\/\$GNU_GCC.git
+	git submodule foreach git pull origin master
 	cp $BASEDIR\/\$GNU_GCC\/\aclocal.m4 $BASEDIR
 	cp $BASEDIR\/\$GNU_GCC\/\compile $BASEDIR
 	cp $BASEDIR\/\$GNU_GCC\/\config.h.in $BASEDIR
