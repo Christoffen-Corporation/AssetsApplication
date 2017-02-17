@@ -4,3 +4,12 @@
 [submodule "AA-GNU-GCC"]
 	path = AA-GNU-GCC
 	url = https://github.com/ChristoffenOSWorks/AA-GNU-GCC
+[submodule "libpng"]
+	path = libpng
+	url = https://github.com/ChristoffenOSWorks/libpng.git
+[submodule "cairo"]
+	path = cairo
+	url = https://github.com/ChristoffenOSWorks/cairo.git
+[submodule "pixman"]
+	path = pixman
+	url = https://github.com/ChristoffenOSWorks/pixman.git
