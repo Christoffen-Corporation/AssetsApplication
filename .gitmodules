@@ -1,0 +1,6 @@
+[submodule "AA-CMake-Clang"]
+	path = AA-CMake-Clang
+	url = https://github.com/ChristoffenOSWorks/AA-CMake-Clang
+[submodule "AA-GNU-GCC"]
+	path = AA-GNU-GCC
+	url = https://github.com/ChristoffenOSWorks/AA-GNU-GCC
