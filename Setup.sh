@@ -18,28 +18,21 @@ echo "3. GNU Autotools and GCC";
 
 read OPTION;
 
-clang_check () {
+if [ $OPTION -eq 1 ] then
+	git submodule init
+	git submodule update
 	cp $BASEDIR\/\AA-CMake-Clang\/\CMakeLists.txt $BASEDIR
 	export CC=clang
 	export CXX=clang++
 	cmake -H. -Bbuild
 	cmake --build build -- -j3 
-}
-
-if [ $OPTION -eq 1 ] 
-then
-	git submodule init
-	git submodule update
-	clang_check
-elif [ $OPTION -eq 2 ]
-then
+elif [ $OPTION -eq 2 ] then
 	mkdir $BASEDIR\/\IR
         mkdir $BASEDIR\/\IR\/\API
         mkdir $BASEDIR\/\IR\/\API\/\JoinPieces
 	clang -emit-llvm -S -o - $BASEDIR/$JOIN_PIECES/JoinTriangles.c $CAIRO > $BASEDIR\/\IR\/\API\/\JoinPieces\/\JoinTriangles.ir
 
-elif [ $OPTION -eq 3 ] 
-then
+elif [ $OPTION -eq 3 ] then
 	git submodule foreach git pull origin master
 	cp $BASEDIR\/\$GNU_GCC\/\aclocal.m4 $BASEDIR
 	cp $BASEDIR\/\$GNU_GCC\/\compile $BASEDIR
